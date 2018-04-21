@@ -75,38 +75,55 @@
   bottom: 0;
 }
 
+.GP-Courses {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.GP-Noscroll {
+  height: 19.5%;
+  overflow: hidden;
+}
+
 #heading {
-    background-image: url("http://www.clker.com/cliparts/d/f/2/c/14118674461964011025red%20an%20orange%20gradient%20abstract%20wallpaper.jpg");
-color: white;
+  background-image: url("http://www.clker.com/cliparts/d/f/2/c/14118674461964011025red%20an%20orange%20gradient%20abstract%20wallpaper.jpg");
+  color: white;
 }
+
 #profile-name {
-    text-align: center;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-   font-weight: 300;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
 }
+
 #profile-word {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
+
 hr {
-    display: block;
-    height: 10;
-    border: 0;
-    border-top: 2px solid white;
-    margin: 0.5em 0;
-    padding: 0;
+  display: block;
+  height: 10;
+  border: 0;
+  border-top: 2px solid white;
+  margin: 0.5em 0;
+  padding: 0;
 }
+
 #hr2 {
-    display: block;
-    height: 10;
-    border: 0;
-    border-top: 1px solid white;
-    margin: 0.5em 0;
-    padding: 0;
+  display: block;
+  height: 10;
+  border: 0;
+  border-top: 1px solid white;
+  margin: 0.5em 0;
+  padding: 0;
 }
+
 #profile {
   border: 5px, black !important;
 }
+
 #pic {
   left: 30%;
   border-radius: 50%;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Segment } from "semantic-ui-react";
-import TimetableView from "./TimetableView";
+// import TimetableView from "./TimetableView";
 
 export default class Timetable extends Component {
   constructor(props) {

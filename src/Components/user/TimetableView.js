@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Segment, Table } from "semantic-ui-react";
+import { Table } from "semantic-ui-react";
 
 export default class GroupDiscussion extends Component {
   constructor(props) {
