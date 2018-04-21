@@ -1,5 +1,17 @@
 import React, { Component } from "react";
-import { Segment } from "semantic-ui-react";
+import { Segment, Image, Button } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+//import profilePic from './student_profile.jpg';
+//const url = require('./student_profile.jpg');
+
+
+  const profile = {
+    name: 'John Gallagher',
+    age: 20,
+    university: 'HKUST',
+    degree: 'Bachelor',
+    major: 'Computer Science',
+  }
 
 export default class Profile extends Component {
   constructor(props) {
@@ -9,9 +21,24 @@ export default class Profile extends Component {
   }
 
   render() {
+    const url = '/src/Components/user/student_profile.jpg';
     return (
       <Segment className="User-Container">
-        <h1>{this.state.userId}'s Profile</h1>
+        <h1>{this.state.userId}</h1>
+        <div>
+          <Image src='/src/Components/user/student_profile.jpg' size='small' />
+        </div>
+        <h3>My Profile</h3>
+        <h4>Name: {profile.name}</h4>
+        <h4>Age: {profile.age}</h4>
+        <h4>University: {profile.university}</h4>
+        <h4>Degree: {profile.degree}</h4>
+        <h4>Major: {profile.major}</h4>
+
+          <Button as={Link} to={"/login"}>
+            Logout
+          </Button>
+
       </Segment>
     );
   }
