@@ -21,7 +21,12 @@ export default class Login extends Component {
   };
 
   render() {
-    if (this.state.redirect) return <Redirect to="/user/john" />;
+    if (this.state.redirect)
+      return (
+        <Redirect
+          to={"/user/notification/john" + this.state.username.toString()}
+        />
+      );
 
     return (
       <Segment inverted color="teal" className="Login-Container">
