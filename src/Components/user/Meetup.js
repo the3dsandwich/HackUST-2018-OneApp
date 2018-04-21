@@ -26,6 +26,7 @@ export default class Meetup extends Component {
           <Segment
             as={Button}
             circular
+            color="orange"
             style={square}
             name="groupdiscussion"
             onClick={this.handleClick.bind(this)}
@@ -38,6 +39,7 @@ export default class Meetup extends Component {
           <Segment
             as={Button}
             circular
+            color="blue"
             style={square}
             name="fun"
             onClick={this.handleClick.bind(this)}

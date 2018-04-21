@@ -23,7 +23,7 @@ export default class Landing extends Component {
         size="large"
       >
         <Menu.Item as={Link} to="/" name="Home" />
-        <Menu.Item name="Our Solution" />
+        <Menu.Item name="OneApp" />
         <Menu.Item as={Link} to="/login">
           <Icon name="user circle outline" />
           Login

@@ -35,6 +35,7 @@ export default class GroupDiscussion extends Component {
                         key={course.code}
                         as={Button}
                         circular
+                        color="green"
                         style={square}
                         name={course.code}
                         onClick={this.handleClick.bind(this)}
