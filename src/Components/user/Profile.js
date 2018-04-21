@@ -26,7 +26,7 @@ export default class Profile extends Component {
       <Segment className="User-Container">
         <h1>{this.state.userId}</h1>
         <div>
-          <Image src='/src/Components/user/student_profile.jpg' size='small' />
+          <Image src='http://www.canterbury.ac.nz/business/uce/profiles/2018-profiles-/1520384876370_UCE-Student-Profile-Matthew-Ruffell-w1000.jpg' size='small' />
         </div>
         <h3>My Profile</h3>
         <h4>Name: {profile.name}</h4>
