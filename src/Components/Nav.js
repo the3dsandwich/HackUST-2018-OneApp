@@ -14,7 +14,14 @@ export default class Landing extends Component {
 
   render() {
     return (
-      <Menu inverted pointing color="blue" widths={3}>
+      <Menu
+        inverted
+        pointing
+        color="blue"
+        widths={3}
+        className="Nav"
+        size="large"
+      >
         <Menu.Item as={Link} to="/" name="Home" />
         <Menu.Item name="Our Solution" />
         <Menu.Item as={Link} to="/login">
