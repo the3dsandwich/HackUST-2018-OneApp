@@ -33,7 +33,7 @@ export default class App extends Component {
               <Route exact path="/login" render={props => <Login />} />
               <Route
                 exact
-                path="/user/:id"
+                path="/user/notification/:id"
                 render={props => (
                   <Notification firebase={this.firebase} {...props} />
                 )}
