@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Segment } from "semantic-ui-react";
 
 export default class UserData extends Component {
   constructor(props) {
@@ -10,6 +11,10 @@ export default class UserData extends Component {
   }
 
   render() {
-    return <h1>User {this.state.userId}</h1>;
+    return (
+      <Segment className="User-Container">
+        <h1>Wiiiiii</h1>
+      </Segment>
+    );
   }
 }
