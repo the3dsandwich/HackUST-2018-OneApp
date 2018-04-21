@@ -1,0 +1,17 @@
+.Background {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: #888888;
+}
+
+.App {
+  width: 30%;
+  height: 90%;
+  position: fixed;
+  left: 35%;
+  top: 5%;
+  background-color: white;
+}

@@ -18,17 +18,21 @@ export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
-          <Nav />
-          <Switch>
-            <Route exact path="/" render={props => <Landing />} />
-            <Route exact path="/login" render={props => <Login />} />
-            <Route
-              path="/user/:id"
-              render={props => <UserData firebase={this.firebase} {...props} />}
-            />
-            <Route render={props => <NotFound code={404} />} />
-          </Switch>
+        <div className="Background">
+          <div className="App">
+            <Nav />
+            <Switch>
+              <Route exact path="/" render={props => <Landing />} />
+              <Route exact path="/login" render={props => <Login />} />
+              <Route
+                path="/user/:id"
+                render={props => (
+                  <UserData firebase={this.firebase} {...props} />
+                )}
+              />
+              <Route render={props => <NotFound code={404} />} />
+            </Switch>
+          </div>
         </div>
       </BrowserRouter>
     );
