@@ -20,7 +20,10 @@ export default class App extends Component {
       <BrowserRouter>
         <div className="Background">
           <div className="App">
-            <Nav />
+            <Switch>
+              <Route exact path="/" render={props => <Nav />} />
+              <Route exact path="/login" render={props => <Nav />} />
+            </Switch>
             <Switch>
               <Route exact path="/" render={props => <Landing />} />
               <Route exact path="/login" render={props => <Login />} />
