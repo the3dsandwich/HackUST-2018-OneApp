@@ -11,6 +11,8 @@ import Notification from "./Components/user/Notification";
 import Profile from "./Components/user/Profile";
 import Meetup from "./Components/user/Meetup";
 import Timetable from "./Components/user/Timetable";
+import GroupDiscussion from "./Components/user/meetup/GroupDiscussion";
+import Fun from "./Components/user/meetup/fun";
 
 export default class App extends Component {
   constructor(props) {
@@ -56,6 +58,18 @@ export default class App extends Component {
                 render={props => (
                   <Timetable firebase={this.firebase} {...props} />
                 )}
+              />
+              <Route
+                exact
+                path="/user/groupdiscussion/:id"
+                render={props => (
+                  <GroupDiscussion firebase={this.firebase} {...props} />
+                )}
+              />
+              <Route
+                exact
+                path="/user/fun/:id"
+                render={props => <Fun firebase={this.firebase} {...props} />}
               />
               <Route render={props => <NotFound code={404} />} />
             </Switch>

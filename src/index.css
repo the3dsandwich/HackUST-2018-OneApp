@@ -61,6 +61,11 @@
   overflow-y: hidden;
 }
 
+.User-Meetup-Container {
+  text-align: center;
+  padding: 35px;
+}
+
 .App-Bar {
   position: absolute;
   border-top-left-radius: 0 !important;

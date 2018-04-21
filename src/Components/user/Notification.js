@@ -80,6 +80,7 @@ export default class Notification extends Component {
     super(props);
     this.state = { userId: this.props.match.params.id };
     this.firebase = this.props.firebase;
+    console.log(notifications);
   }
 
   handleClick() {
@@ -100,6 +101,7 @@ export default class Notification extends Component {
   }
 
   render() {
+    console.log(notifications);
     return (
       <Segment className="User-Container">
         <Header as="h1">{this.state.userId}'s Schedule</Header>
@@ -142,7 +144,7 @@ export default class Notification extends Component {
                   />
                 )
             )}
-            <Divider>Good Night!</Divider>
+            <Divider horizontal>Good Night!</Divider>
           </Segment>
         </div>
         <Divider />
@@ -150,6 +152,7 @@ export default class Notification extends Component {
           <div className="User-Notification-Dues">
             {dues.map(due => (
               <Segment
+                key={due.description}
                 circular
                 inverted
                 color={due.title === "DUE" ? "red" : "orange"}
