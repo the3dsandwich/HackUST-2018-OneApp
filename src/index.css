@@ -40,6 +40,27 @@
   background-color: white;
 }
 
+.User-Notification-NsDisplay {
+  height: 60%;
+  overflow: hidden;
+}
+.User-Notification-Notifications {
+  height: 100%;
+  width: 102.7%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.User-Notification-Display {
+  height: 25%;
+  overflow: hidden;
+}
+
+.User-Notification-Dues {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
 .App-Bar {
   position: absolute;
   border-top-left-radius: 0 !important;

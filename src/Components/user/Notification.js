@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { Segment, Message, Header } from "semantic-ui-react";
+import {
+  Segment,
+  Message,
+  Header,
+  Container,
+  Divider
+} from "semantic-ui-react";
 import Push from "push.js";
 
 const notifications = [
@@ -95,43 +101,68 @@ export default class Notification extends Component {
 
   render() {
     return (
-      <Segment className="User-Segment">
+      <Segment className="User-Container">
         <Header as="h1">{this.state.userId}'s Schedule</Header>
-        <Segment className="User-Notification-Notifications">
-          {notifications.map(
-            no =>
-              no.type === "alarm" ? null : (
-                <Message
-                  key={no.notifyTime}
-                  header={"Next up: " + no.data.name}
-                  content={
-                    "Leave by " +
-                    no.data.leaveTime.toLocaleTimeString(["en-hk"], {
-                      hour: "2-digit",
-                      minute: "2-digit"
-                    }) +
-                    " to arrive on time"
-                  }
-                  color={no.color}
-                />
-              )
-          )}
-        </Segment>
-        <Segment className="User-Notification-Dues">
-          {dues.map(due => (
-            <Segment
-              circular
-              inverted
-              color={due.title === "DUE" ? "red" : "orange"}
-              style={square}
-            >
-              <Header as="h2">
-                {due.title}
-                <Header.Subheader>{due.description}</Header.Subheader>
-              </Header>
-            </Segment>
-          ))}
-        </Segment>
+        <div className="User-Notification-NsDisplay">
+          <Segment className="User-Notification-Notifications">
+            {notifications.map(
+              no =>
+                no.type === "alarm" ? (
+                  <Message
+                    key={no.notifyTime}
+                    header={
+                      "Sleep at " +
+                      no.data.bedTime.toLocaleTimeString(["en-hk"], {
+                        hour: "2-digit",
+                        minute: "2-digit"
+                      })
+                    }
+                    content={
+                      "Wake up at " +
+                      no.data.wakeTime.toLocaleTimeString(["en-hk"], {
+                        hour: "2-digit",
+                        minute: "2-digit"
+                      })
+                    }
+                    color="black"
+                  />
+                ) : (
+                  <Message
+                    key={no.notifyTime}
+                    header={"Next up: " + no.data.name}
+                    content={
+                      "Leave by " +
+                      no.data.leaveTime.toLocaleTimeString(["en-hk"], {
+                        hour: "2-digit",
+                        minute: "2-digit"
+                      }) +
+                      " to arrive on time"
+                    }
+                    color={no.color}
+                  />
+                )
+            )}
+            <Divider>Good Night!</Divider>
+          </Segment>
+        </div>
+        <Divider />
+        <Container fluid className="User-Notification-Display">
+          <div className="User-Notification-Dues">
+            {dues.map(due => (
+              <Segment
+                circular
+                inverted
+                color={due.title === "DUE" ? "red" : "orange"}
+                style={square}
+              >
+                <Header as="h2">
+                  {due.title}
+                  <Header.Subheader>{due.description}</Header.Subheader>
+                </Header>
+              </Segment>
+            ))}
+          </div>
+        </Container>
       </Segment>
     );
   }

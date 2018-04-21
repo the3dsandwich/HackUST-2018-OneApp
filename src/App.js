@@ -59,7 +59,10 @@ export default class App extends Component {
               />
               <Route render={props => <NotFound code={404} />} />
             </Switch>
-            <Route path="/user/:id" render={props => <AppBar {...props} />} />
+            <Route
+              path="/user/:func/:id"
+              render={props => <AppBar {...props} />}
+            />
           </div>
         </div>
       </BrowserRouter>
