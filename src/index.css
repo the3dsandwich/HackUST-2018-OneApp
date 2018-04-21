@@ -37,6 +37,23 @@
   height: 90.5%;
   left: 3%;
   top: 2%;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.User-Notification-Notifications {
+  height: 60%;
+  overflow-y: inherit;
+  overflow-x: hidden;
+}
+
+.User-Notification-Dues {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.-webkit-scrollbar {
+  display: none;
 }
 
 .App-Bar {
