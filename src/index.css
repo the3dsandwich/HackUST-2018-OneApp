@@ -78,6 +78,8 @@
 #heading {
     background-image: url("http://www.clker.com/cliparts/d/f/2/c/14118674461964011025red%20an%20orange%20gradient%20abstract%20wallpaper.jpg");
 color: white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
 }
 #profile-name {
     text-align: center;
@@ -104,6 +106,11 @@ hr {
     margin: 0.5em 0;
     padding: 0;
 }
+#body {
+  background-color: #622525;
+  background-image: url("https://www.xmple.com/wallpaper/gradient-linear-red-black-1920x1080-c2-8b0000-000000-a-30-f-14.svg");
+  border-radius: 20px;
+}
 #profile {
   border: 5px, black !important;
 }
@@ -111,4 +118,8 @@ hr {
   left: 30%;
   border-radius: 50%;
   border: 5px, white;
+}
+#logout {
+    margin: 8px;
+  border-radius: 20px;
 }
