@@ -104,7 +104,7 @@ export default class Notification extends Component {
     console.log(notifications);
     return (
       <Segment className="User-Container">
-        <Header as="h1">{this.state.userId}'s Schedule</Header>
+        <Header as="h1">John's Schedule</Header>
         <div className="User-Notification-NsDisplay">
           <Segment className="User-Notification-Notifications">
             {notifications.map(
