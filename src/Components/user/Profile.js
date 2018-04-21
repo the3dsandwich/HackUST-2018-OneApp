@@ -23,17 +23,27 @@ export default class Profile extends Component {
   render() {
     const url = '/src/Components/user/student_profile.jpg';
     return (
-      <Segment className="User-Container">
-        <h1>{this.state.userId}</h1>
+      <Segment className="User-Container" id="heading">
+      <div >
         <div>
-          <Image src='http://www.canterbury.ac.nz/business/uce/profiles/2018-profiles-/1520384876370_UCE-Student-Profile-Matthew-Ruffell-w1000.jpg' size='small' />
+          <Image src='http://www.canterbury.ac.nz/business/uce/profiles/2018-profiles-/1520384876370_UCE-Student-Profile-Matthew-Ruffell-w1000.jpg' size='small' id="pic" />
         </div>
-        <h3>My Profile</h3>
-        <h4>Name: {profile.name}</h4>
-        <h4>Age: {profile.age}</h4>
-        <h4>University: {profile.university}</h4>
-        <h4>Degree: {profile.degree}</h4>
-        <h4>Major: {profile.major}</h4>
+      </div>
+        <h2 id="profile-name">{profile.name}</h2>
+        <hr/>
+        <br/>
+        <div id="profile"><h1 id="profile-word">Profile</h1></div>
+        <hr id="hr2"/>
+        <h3>Age: {profile.age}</h3>
+        <hr id="hr2"/>
+        <h3>University: {profile.university}</h3>
+        <hr id="hr2"/>
+        <h3>Degree: {profile.degree}</h3>
+        <hr id="hr2"/>
+        <h3>Major: {profile.major}</h3>
+        <hr id="hr2"/>
+        <br/>
+        <br/>
 
           <Button as={Link} to={"/login"}>
             Logout
