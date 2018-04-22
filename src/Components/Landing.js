@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Segment, Button, Header } from "semantic-ui-react";
+import { Segment, Button } from "semantic-ui-react";
 import img from "../img/logo.jpg";
 
 export default class Landing extends Component {

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import firebase from "firebase";
-import firebase_config from "./keys/key";
 import Nav from "./Components/Nav";
 import AppBar from "./Components/AppBar";
 import Landing from "./Components/Landing";
@@ -19,7 +17,6 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.firebase = firebase.initializeApp(firebase_config);
   }
 
   render() {
