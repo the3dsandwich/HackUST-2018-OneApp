@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Segment } from "semantic-ui-react";
-// import TimetableView from "./TimetableView";
+import { Segment, Header } from "semantic-ui-react";
+import ttimg from "../img/timetablee.jpg";
 
 export default class Timetable extends Component {
   constructor(props) {
@@ -12,7 +12,10 @@ export default class Timetable extends Component {
   render() {
     return (
       <Segment className="User-Container">
-        <h1>{this.state.userId}'s Timetable</h1>
+        <Header as="h1">John's Timetable</Header>
+        <div className="User-Timetable-Container">
+          <img src={ttimg} alt="time table" />
+        </div>
       </Segment>
     );
   }

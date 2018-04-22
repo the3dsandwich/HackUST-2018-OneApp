@@ -25,11 +25,51 @@
   position: absolute;
 }
 
+.Signup-Container {
+  width: 100%;
+  height: 94%;
+  overflow-y: scroll;
+  position: fixed;
+  top: 4%;
+  border-bottom-right-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+}
+
+.Landing-Container {
+  width: 100%;
+  height: 94%;
+  overflow: hidden;
+  text-align: center;
+  position: fixed;
+  top: 4%;
+  border-bottom-right-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+}
+
+.Landing-Container > img {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 20%;
+}
+
+.Landing-Container > p {
+  position: inherit;
+  top: 55%;
+}
+
+.Landing-Container > a {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  width: 40%;
+}
+
 .Login-Container {
   width: 80%;
   left: 10%;
   position: fixed;
-  top: 35%;
+  top: 33%;
 }
 
 .User-Container {
@@ -38,6 +78,15 @@
   left: 3%;
   top: 2%;
   background-color: white;
+}
+
+.User-Timetable-Container {
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.User-Timetable-Container > img {
+  width: 100%;
 }
 
 .User-Notification-NsDisplay {

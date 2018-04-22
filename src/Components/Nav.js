@@ -17,7 +17,7 @@ export default class Landing extends Component {
       <Menu
         inverted
         pointing
-        color="blue"
+        color="pink"
         widths={3}
         className="Nav"
         size="large"

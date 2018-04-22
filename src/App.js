@@ -10,9 +10,10 @@ import NotFound from "./Components/NotFound";
 import Notification from "./Components/user/Notification";
 import Profile from "./Components/user/Profile";
 import Meetup from "./Components/user/Meetup";
-import Timetable from "./Components/user/Timetable";
+import Timetable from "./Components/Timetable";
 import GroupDiscussion from "./Components/user/meetup/GroupDiscussion";
 import Fun from "./Components/user/meetup/fun";
+import Signup from "./Components/Signup";
 
 export default class App extends Component {
   constructor(props) {
@@ -29,9 +30,11 @@ export default class App extends Component {
             <Switch>
               <Route exact path="/" render={props => <Nav />} />
               <Route exact path="/login" render={props => <Nav />} />
+              <Route exact path="/signup" render={props => <Nav />} />
             </Switch>
             <Switch>
               <Route exact path="/" render={props => <Landing />} />
+              <Route exact path="/signup" render={props => <Signup />} />
               <Route exact path="/login" render={props => <Login />} />
               <Route
                 exact

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
+import { Link } from "react-router-dom";
 import { Segment, Form, Button } from "semantic-ui-react";
 
 export default class Login extends Component {
@@ -29,7 +30,7 @@ export default class Login extends Component {
       );
 
     return (
-      <Segment inverted color="teal" className="Login-Container">
+      <Segment inverted color="pink" className="Login-Container">
         <Form inverted onSubmit={this.handleSubmit.bind(this)}>
           <Form.Input
             fluid
@@ -48,7 +49,12 @@ export default class Login extends Component {
             placeholder="password"
             onChange={this.handleChange}
           />
-          <Button type="submit">Submit</Button>
+          <Button primary type="submit">
+            Submit
+          </Button>
+          <Button as={Link} to="/signup" secondary floated="right">
+            Sign Up
+          </Button>
         </Form>
       </Segment>
     );
