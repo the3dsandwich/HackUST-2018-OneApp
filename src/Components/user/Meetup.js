@@ -21,7 +21,7 @@ export default class Meetup extends Component {
     if (this.state.render === "fun") return <Redirect to={"/user/fun/john"} />;
 
     return (
-      <Segment className="User-Container">
+      <Segment disabled className="User-Container">
         <div className="User-Meetup-Container">
           <Segment
             as={Button}

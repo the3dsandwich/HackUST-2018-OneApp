@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
 import { Segment, Form, Button } from "semantic-ui-react";
+import img from "../img/logo.jpg";
 
 export default class Login extends Component {
   constructor(props) {
@@ -56,6 +57,7 @@ export default class Login extends Component {
             Sign Up
           </Button>
         </Form>
+        <img src={img} alt="logo" />
       </Segment>
     );
   }

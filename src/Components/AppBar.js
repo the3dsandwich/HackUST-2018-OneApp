@@ -14,7 +14,7 @@ export default class Landing extends Component {
         <Menu.Item as={Link} to={"/user/timetable/" + this.state.userId}>
           <Icon name="calendar" />Timetable
         </Menu.Item>
-        <Menu.Item as={Link} to={"/user/meetup/" + this.state.userId}>
+        <Menu.Item disabled as={Link} to={"/user/meetup/" + this.state.userId}>
           <Icon name="food" />Meetup
         </Menu.Item>
         <Menu.Item as={Link} to={"/user/notification/" + this.state.userId}>

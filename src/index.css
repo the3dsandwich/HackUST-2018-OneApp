@@ -53,9 +53,9 @@
   top: 20%;
 }
 
-.Landing-Container > p {
+.Landing-Container > h3 {
   position: inherit;
-  top: 55%;
+  top: 50%;
 }
 
 .Landing-Container > a {
@@ -69,7 +69,14 @@
   width: 80%;
   left: 10%;
   position: fixed;
-  top: 33%;
+  top: 30%;
+}
+
+.Login-Container > img {
+  width: 30%;
+  position: absolute;
+  left: 35%;
+  top: 110%;
 }
 
 .User-Container {
@@ -101,7 +108,7 @@
 }
 
 .User-Notification-Display {
-  height: 25%;
+  height: 23.2%;
   overflow: hidden;
 }
 

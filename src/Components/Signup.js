@@ -43,7 +43,7 @@ export default class Landing extends Component {
   };
 
   render() {
-    if (this.state.redirect) return <Redirect to="/user/notification/john" />;
+    if (this.state.redirect) return <Redirect to="/user/profile/john" />;
 
     return (
       <Segment className="Signup-Container">
@@ -127,7 +127,9 @@ export default class Landing extends Component {
               inline
               label="ITSC Account"
               name="cusername"
-              value={this.state.cusername}
+              value={
+                this.state.sid ? "itsc" + this.state.sid + "@ust.hk" : null
+              }
               placeholder="itsc<sid>@ust.hk"
               onChange={this.handleChange}
             />
