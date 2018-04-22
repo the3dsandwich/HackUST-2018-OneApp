@@ -184,3 +184,8 @@ hr {
   margin: 8px;
   border-radius: 20px;
 }
+#body {
+  background-color: #622525;
+  background-image: url("https://www.xmple.com/wallpaper/gradient-linear-red-black-1920x1080-c2-8b0000-000000-a-30-f-14.svg");
+  border-radius: 20px;
+}
