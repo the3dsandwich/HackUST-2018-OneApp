@@ -25,9 +25,7 @@ export default class Login extends Component {
   render() {
     if (this.state.redirect)
       return (
-        <Redirect
-          to={"/user/notification/john" + this.state.username.toString()}
-        />
+        <Redirect to={"/user/profile/john" + this.state.username.toString()} />
       );
 
     return (
@@ -51,7 +49,7 @@ export default class Login extends Component {
             onChange={this.handleChange}
           />
           <Button primary type="submit">
-            Submit
+            Login
           </Button>
           <Button as={Link} to="/signup" secondary floated="right">
             Sign Up

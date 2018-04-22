@@ -8,8 +8,6 @@ import {
   Loader
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-//import profilePic from './student_profile.jpg';
-//const url = require('./student_profile.jpg');
 
 const profile = {
   name: "John Gallagher",
@@ -30,10 +28,10 @@ export default class Profile extends Component {
     this.firebase = this.props.firebase;
     setTimeout(() => {
       this.setState({ loaded: true });
-    }, 3000);
+    }, 2000);
     setTimeout(() => {
       this.setState({ prepared: true });
-    }, 5000);
+    }, 3000);
   }
 
   render() {
